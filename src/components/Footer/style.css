@@ -1,0 +1,153 @@
+.footer-wrapper {
+  width: 100%;
+  background: #182873;
+}
+
+.footer {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1320px) {
+  
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 25px 0 20px;
+}
+
+.footer-social-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.87;
+  color: #608ad8;
+}
+
+.footer-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-social-list li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.footer-info {
+  padding: 35px 0 30px;
+  border-bottom: 1px solid #2c5094;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info-block {
+  width: 204px;
+}
+
+.footer-info-block img {
+  margin-top: -7px;
+}
+
+.footer-info-block-title {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #608ad8;
+  margin-bottom: 20px;
+}
+
+.footer-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.footer-info-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.footer-info-list a {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.87;
+  color: #9ebbf1;
+  text-decoration: none;
+}
+
+.footer-btn {
+  width: 160px;
+  height: 40px;
+  padding: 0 15px;
+  border: solid 1px #2c5094;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 2;
+  color: #608ad8;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 28px;
+}
+
+.footer-arrow-up {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border: solid #608ad8;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.footer-address {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.87;
+  color: #608ad8;
+  margin-top: -14px;
+}
+
+@media (max-width: 1320px) and (min-width: 768px) {
+  .footer {
+    width: 688px;
+  }
+  .footer-info {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .footer-info-block {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    width: 335px;
+  }
+  .footer-info {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .footer-info-block--narrow {
+    margin-bottom: 30px;
+    width: 165px !important;
+  }
+  .footer-info-block--wide {
+    margin-bottom: 30px;
+    width: 335px !important;
+  }
+  .footer-btn {
+    width: 100%;
+  }
+}

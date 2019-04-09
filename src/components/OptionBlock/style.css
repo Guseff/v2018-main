@@ -1,0 +1,244 @@
+.option {
+  width: 1320px;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option--reverse {
+  flex-direction: row-reverse;
+}
+
+.option-info {
+  width: 539px;
+  display: flex;
+  flex-direction: column;
+}
+
+.option-title {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.24;
+  color: #182873;
+  padding-left: 25px;
+}
+
+.option-text {
+  font-size: 19px;
+  line-height: 1.58;
+  color: #182873;
+  margin-bottom: 40px;
+  padding-left: 25px;
+}
+
+.option-list {
+  width: 538px;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.option-list-element {
+  padding: 20px 25px 25px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  line-height: 1.53;
+  color: #182873;
+}
+
+.option-element-top img {
+  width: 38px;
+  height: 38px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.option-list-element--active {
+  background-color: #f2f8ff;
+}
+
+.option-text span, .option-list-element span {
+  font-weight: bold;
+}
+
+.option-img {
+  width: 800px;
+  height: 670px;
+  margin-right: -150px;
+}
+
+.option-img--reverse {
+  width: 770px;
+  margin-left: -150px;
+  margin-right: 0;
+}
+
+.option-button-wrap {
+  padding-left: 25px;
+  margin-top: 50px;
+  order: 3;
+}
+
+.slick---pic {
+  width: 330px; 
+  height: 330px;
+  position: absolute;
+  top: 0;
+  -webkit-transition: left 2s;
+  transition: left 2s;
+}
+
+.option-element-pic {
+  display: none;
+}
+
+/* Styles for TABLET screens */
+@media (max-width: 1320px) and (min-width: 768px) {
+  .option {
+    width: 688px;
+    margin: 80px auto;
+  } 
+  .option-info {
+    width: 688px;
+  }
+  .option-title, .option-text, .option-button-wrap {
+    padding-left: 0;
+  }
+  .option-list {
+    width: 688px;
+    height: 540px;
+    order: 4;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .option-list-element {
+    width: 284px;
+    height: 500px;
+    padding: 30px 25px 10px;
+    margin-right: 20px;
+    font-size: 19px;
+    line-height: 1.53;
+    color: #182873;
+    background-color: #f2f8ff;
+    position: absolute;
+    top: 0;
+    -webkit-transition: left 2s;
+    transition: left 2s;
+  }
+  .option-list-element[index='-2'] {
+    left: -708px;
+  }
+  .option-list-element[index='-1'] {
+    left: -354px;
+  }
+  .option-list-element[index='0'] {
+    left: 0;
+  }
+  .option-list-element[index='1'] {
+    left: 354px;
+  }
+  .option-list-element[index='2'] {
+    left: 708px;
+  }
+  .option-element-top {
+    display: flex;
+  }
+  .option-element-top img {
+    display: block;
+    margin-right: 20px;
+  }
+  .option-element-pic {
+    display: block;
+    width: 334px;
+    height: 334px;
+    margin-left: -25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .option-button-wrap {
+    margin: -10px 0 40px;
+  }
+  .option-img {
+    display: none;
+  }
+  .caroussel {
+    order: 4;
+  }
+}
+
+/* Styles for MOBILE screens */
+@media (max-width: 767px) {
+  .option {
+    width: 335px;
+    margin: 80px auto;
+  } 
+  .option-info {
+    width: 335px;
+  }
+  .option-title, .option-text, .option-button-wrap {
+    padding-left: 0;
+  }
+  .caroussel {
+    order: 4;
+  }
+  .option-list {
+    width: 315px;
+    height: 540px;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 4;
+    position: relative;
+  }
+  .option-list-element {
+    width: 271px;
+    padding: 30px 22px 10px;
+    font-size: 19px;
+    line-height: 1.53;
+    color: #182873;
+    background-color: #f2f8ff;
+    position: absolute;
+    top: 0;
+    -webkit-transition: left 2s;
+    transition: left 2s;
+  }
+  .option-list-element[index='-2'] {
+    left: -680px;
+  }
+  .option-list-element[index='-1'] {
+    left: -340px;
+  }
+  .option-list-element[index='0'] {
+    left: 0;
+  }
+  .option-list-element[index='1'] {
+    left: 340px;
+  }
+  .option-list-element[index='2'] {
+    left: 680px;
+  }
+  .option-element-top {
+    display: flex;
+  }
+  .option-element-top img {
+    width: 34px;
+    display: block;
+    margin-right: 20px;
+  }
+  .option-element-pic {
+    display: block;
+    width: 315px;
+    height: 315px;
+    margin-left: -22px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .option-button-wrap {
+    margin: -10px 0 40px;
+  }
+  .option-img {
+    display: none;
+  }
+}

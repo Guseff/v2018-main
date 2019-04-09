@@ -1,0 +1,21 @@
+.button-free {
+  display: block;
+  padding: 15px 28px;
+  background-color: #0061ff;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button-free--small {
+  margin: 10px 0 40px;
+}
+
+.button-free--big {
+  margin: 0;
+}
