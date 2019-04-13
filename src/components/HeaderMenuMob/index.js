@@ -18,7 +18,7 @@ const MENU_ITEMS = [
   },
 ];
 
-const HeaderMenu = () => (
+const HeaderMenuMob = () => (
   <nav role="navigation" className='mob-nav'>
     <div className='menu-toggle'>
       <input type="checkbox" />
@@ -37,4 +37,4 @@ const HeaderMenu = () => (
   </nav>
 );
 
-export default HeaderMenu;
+export default HeaderMenuMob;

@@ -6,7 +6,7 @@
   height: 100%;
 }
 
-.header-menu ul {
+.header-menu > ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -14,14 +14,22 @@
   height: 100%;
 }
 
-.header-menu ul li {
+.header-menu > ul > li {
+  position: relative;
   display: inline-flex;
   align-items: center;
   margin: 0 21px;
   height: 100%;
 }
 
-.header-menu ul li a {
+.header-menu > ul > li > a {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #182873;
   text-decoration: none;
   cursor: pointer;
 }
@@ -39,4 +47,49 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.header-menu-sub {
+  position: absolute;
+  top: 75px;
+  left: -20px;
+  width: 160px;
+  list-style: none;
+  padding: 6px 20px 20px;
+  margin: 0;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 20px 0 rgba(125, 163, 222, 0.15);
+  border: solid 1px #ddeaff;
+  background-color: #ffffff; 
+  transform-origin: 0 0;
+  transform: scaleY(0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.header-menu-sub > li {
+  height: 26px;
+  font-size: 16px;
+  line-height: 1.63;
+  margin-top: 12px; 
+}
+
+.header-menu-sub > li > a {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #182873;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-menu-sub > li > a:hover  {
+  color: #0069ff;
+}
+
+.header-menu > ul > li:hover ul {
+  transform: none;
 }
