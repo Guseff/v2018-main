@@ -13,17 +13,15 @@ const USER_ITEMS = [
 ];
 
 const UserMenu = () => (
-  <div className="user-menu">
-    <ul>
-      {USER_ITEMS.map((item, i) => (
-        <li key={i}>
-          <button className={classNames('user-menu-button', {'user-menu-button--blue': item.blue})}>
-            {item.text}
-          </button>
-        </li>
-      ))}
-    </ul>
-  </div>
+  <ul className="user-menu">
+    {USER_ITEMS.map((item, i) => (
+      <li key={i}>
+        <button className={classNames('user-menu-button', {'user-menu-button--blue': item.blue})}>
+          {item.text}
+        </button>
+      </li>
+    ))}
+  </ul>
 );
 
 export default UserMenu;

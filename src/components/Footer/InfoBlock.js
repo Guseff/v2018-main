@@ -1,8 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './style.css';
-
 const InfoBlock = (data) => (
   <div className={classNames("footer-info-block", 
                     {

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './style.css';
-
 const InfoList = (props) => (
   <ul className="footer-info-list">
     {props.list.map((item, i) => (

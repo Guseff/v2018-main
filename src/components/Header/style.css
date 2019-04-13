@@ -27,7 +27,7 @@
     width: 688px;
   }
   .header-menu-wrap {
-    display: none;
+    /*display: none;*/
   }
 }
 
@@ -36,6 +36,6 @@
     width: 335px;
   }
   .header-menu-wrap {
-    display: none;
+    
   }
 }

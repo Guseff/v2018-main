@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './style.css';
-
 const SOCIAL_ITEMS = [
   {
     ico: require('../../assets/images/telegram-foot.svg'),

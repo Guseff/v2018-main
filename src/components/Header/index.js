@@ -1,8 +1,8 @@
 import React from 'react';
 
+import Toggle from '../HeaderMenu/Toggle';
 import HeaderMenu from '../HeaderMenu';
 import UserMenu from '../UserMenu';
-import HeaderMenuMob from '../HeaderMenuMob';
 
 import './style.css';
 
@@ -12,10 +12,11 @@ const Header = () => (
   <div className="header-wrapper">
     <div className="header">
       <img alt='' src={logo} />
-      <HeaderMenuMob />
       <div className="header-menu-wrap">
-        <HeaderMenu />
-        <UserMenu />       
+        <Toggle>
+          <HeaderMenu />
+          <UserMenu /> 
+        </Toggle>      
       </div>
     </div>
   </div>
