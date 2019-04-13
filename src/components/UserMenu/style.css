@@ -1,5 +1,5 @@
 .user-menu {
-  display: none;
+  display: flex;
   font-size: 16px;
   font-weight: 600;
   list-style: none;
@@ -9,8 +9,10 @@
 }
 
 .user-menu li {
-  display: inline-block;
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .user-menu li a {
@@ -31,4 +33,17 @@
 .user-menu-button--blue {
   background-color: #0069ff !important;
   color: #ffffff !important;
+}
+
+
+@media (max-width: 1319px) and (min-width: 768px) { 
+  .user-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) { 
+  .user-menu {
+    display: none;
+  }
 }
