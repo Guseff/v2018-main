@@ -1,0 +1,38 @@
+.advantages {
+  width: 1320px;
+  margin: 60px auto 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+
+.advantages-block {
+  width: 350px;
+  text-align: center;
+}
+
+.advantages-block-text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: center;
+  color: #182873;
+}
+
+.advantages-block-val {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  color: #182873;
+}
+
+/*   Tablet Screen   */
+@media (max-width: 1319px) and (min-width: 768px) { 
+  
+}
+
+/*   Mobile Screen   */
+@media (max-width: 767px) { 
+  
+}
