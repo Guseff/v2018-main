@@ -30,12 +30,17 @@
   cursor: pointer;
 }
 
-.user-menu-button--blue {
+.user-menu-button:hover {
   background-color: #0069ff !important;
   color: #ffffff !important;
 }
 
-
+@media (max-width: 1319px) { 
+  .user-menu {
+    display: none;
+  }
+}
+/*
 @media (max-width: 1319px) and (min-width: 768px) { 
   .user-menu {
     display: none;
@@ -46,4 +51,4 @@
   .user-menu {
     display: none;
   }
-}
+}*/

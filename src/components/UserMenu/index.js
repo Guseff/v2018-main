@@ -16,7 +16,7 @@ const UserMenu = () => (
   <ul className="user-menu">
     {USER_ITEMS.map((item, i) => (
       <li key={i}>
-        <button className={classNames('user-menu-button', {'user-menu-button--blue': item.blue})}>
+        <button className={classNames('user-menu-button')}>
           {item.text}
         </button>
       </li>
