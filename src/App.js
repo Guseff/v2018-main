@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Advantages from './components/Advantages';
+import Exchanges from './components/Exchanges';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Header />
           <Hero />
           <Advantages />
+          <Exchanges />
           <Footer />
       </div>
     );

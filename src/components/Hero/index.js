@@ -32,6 +32,7 @@ const Hero = () => (
         ))}
       </div>
       <div className='hero-info-video-link'>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         Wondering how it works? <a href='#'>Watch a video</a>
       </div>
     </div>
