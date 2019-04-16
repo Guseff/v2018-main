@@ -30,6 +30,9 @@ const Advantages = () => (
         <div className='advantages-block-val'>
           + {item.num}{item.thou ? ',000' : ''} {item.value}
         </div>
+        {(i + 1 < ADVANTAGES.length) ? 
+          <div className='advantages-gap'></div> : ''
+        }
       </div>
     ))}
   </div>
