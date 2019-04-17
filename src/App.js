@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Advantages from './components/Advantages';
 import Exchanges from './components/Exchanges';
+import Tools from './components/Tools';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Hero />
           <Advantages />
           <Exchanges />
+          <Tools />
           <Footer />
       </div>
     );
