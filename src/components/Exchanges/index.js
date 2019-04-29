@@ -53,8 +53,8 @@ class Exchanges extends Component {
 
   closeHandle() {
     this.setState(state => ({
-        clsd: !state.clsd 
-      }));
+      clsd: !state.clsd 
+    }));
   }
 
   render() {
