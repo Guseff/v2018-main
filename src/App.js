@@ -10,6 +10,7 @@ import Exchanges from './components/Exchanges';
 import Tools from './components/Tools';
 import Steps from './components/Steps';
 import Trasted from './components/Trasted';
+import Media from './components/Media';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Tools />
           <Steps />
           <Trasted />
+          <Media />
           <Footer />
       </div>
     );
