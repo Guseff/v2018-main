@@ -27,10 +27,26 @@
 
 /* Styles for TABLET screens */
 @media (max-width: 1320px) and (min-width: 768px) {
+  .start-wrapper {
+    width: 688px;
+  }
   
+  .start-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+  }
 }
 
 /* Styles for MOBILE screens */
 @media (max-width: 767px) {
+  .start-wrapper {
+    width: 335px;
+    margin-bottom: 80px;
+  }
   
+  .start-title {
+    font-size: 25px;
+  }
 }

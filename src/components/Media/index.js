@@ -57,6 +57,7 @@ class Media extends Component {
         <div className='media-title'>
           Our Media
         </div>
+
         <div className='media'>
           <button onClick={this.decIndex} className={classNames('media-arrow-button', 'media-arrow-button--left')}>
             <img alt='' src={arrowleft} />
@@ -81,6 +82,7 @@ class Media extends Component {
             ))}
           </div>   
         </div>
+        
         <div className='media-ind-list'>
           <button onClick={this.decIndex} className={classNames('media-ind-elem', {'media-ind-elem--active': this.state.shift === 0})}></button>
           <button onClick={this.incIndex} className={classNames('media-ind-elem', {'media-ind-elem--active': this.state.shift === -1})}></button>

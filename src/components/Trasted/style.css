@@ -96,10 +96,60 @@
 
 /* Styles for TABLET screens */
 @media (max-width: 1320px) and (min-width: 768px) {
-  
+  .trasted-wrapper {
+    width: 688px;
+  }
+
+  .trasted {
+    flex-direction: column;
+  }
+
+  .trasted-info {
+    width: 588px;
+    margin-bottom: 20px;
+  }
+
+  .trasted-list {
+    width: 688px;
+  }
+
+  .trasted-list-element {
+    width: 334px;
+    height: 175px;
+  }
 }
 
 /* Styles for MOBILE screens */
 @media (max-width: 767px) {
+  .trasted-wrapper {
+    width: 335px;
+  }
+
+  .trasted {
+    flex-direction: column;
+  }
+
+  .trasted-title {
+    font-size: 25px;
+  }
   
+  .trasted-info {
+    width: 275px;
+    height: 410px;
+    padding: 30px 30px 30px;
+    margin-bottom: 20px;
+  }
+
+  .trasted-list {
+    width: 335px;
+  }
+
+  .trasted-list-element {
+    width: 158px;
+    height: 130px;
+  }
+
+  .trasted-list-element img {
+    transform: scale(0.7);
+  }
 }

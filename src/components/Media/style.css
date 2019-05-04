@@ -131,10 +131,88 @@
 
 /* Styles for TABLET screens */
 @media (max-width: 1320px) and (min-width: 768px) {
+  .media-wrapper {
+    width: 688px;
+  }
   
+  .media-arrow-button {
+    display: none;
+  }
+
+  .media-list {
+    height: 322px;
+  }
+
+  .media-elem {
+    width: 254px;
+    height: 312px;
+    padding: 40px;
+  }
+  .media-elem[index='-2'] {
+    left: -708px;
+  } 
+  .media-elem[index='-1'] {
+    left: -354px;
+  } 
+  .media-elem[index='0'] {
+    left: 0;
+  }
+  .media-elem[index='1'] {
+    left: 354px;
+  }
+  .media-elem[index='2'] {
+    left: 708px;
+  }
+  .media-elem[index='3'] {
+    left: 1062px;
+  }  
+  .media-elem[index='4'] {
+    left: 1396px;
+  }  
 }
 
 /* Styles for MOBILE screens */
 @media (max-width: 767px) {
+  .media-wrapper {
+    width: 335px;
+  }
   
+  .media-arrow-button {
+    display: none;
+  }
+
+  .media-title {
+    font-size: 25px;
+  }
+
+  .media-list {
+    height: 322px;
+  }
+
+  .media-elem {
+    width: 275px;
+    height: 312px;
+    padding: 60px 30px 40px;
+  }
+  .media-elem[index='-2'] {
+    left: -708px;
+  } 
+  .media-elem[index='-1'] {
+    left: -354px;
+  } 
+  .media-elem[index='0'] {
+    left: 0;
+  }
+  .media-elem[index='1'] {
+    left: 354px;
+  }
+  .media-elem[index='2'] {
+    left: 708px;
+  }
+  .media-elem[index='3'] {
+    left: 1062px;
+  }  
+  .media-elem[index='4'] {
+    left: 1396px;
+  }  
 }
