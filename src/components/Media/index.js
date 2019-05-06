@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import ReactSwipeEvents from 'react-swipe-events';
 
 import './style.css';
 
@@ -33,21 +34,27 @@ const MEDIA = [
 class Media extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       shift: 0,
     }
-
-  }
-
-  decIndex = () => {
-    this.setState(({
-      shift: 0,
-    }))
   }
 
   incIndex = () => {
     this.setState(({
-      shift: -1,
+      shift: this.state.shift === 0 ? 0 : this.state.shift + 1,
+    }))
+  }
+
+  decIndex = () => {
+    this.setState(({
+      shift: this.state.shift === -3 ? -3 : this.state.shift - 1,
+    }))
+  }
+
+  setIndex = (i) => {
+    this.setState(({
+      shift: i,
     }))
   }
 
@@ -59,33 +66,41 @@ class Media extends Component {
         </div>
 
         <div className='media'>
-          <button onClick={this.decIndex} className={classNames('media-arrow-button', 'media-arrow-button--left')}>
+          <button onClick={this.incIndex} className={classNames('media-arrow-button', 'media-arrow-button--left')}>
             <img alt='' src={arrowleft} />
           </button>
-          <button onClick={this.incIndex} className={classNames('media-arrow-button', 'media-arrow-button--right')}>
+          <button onClick={this.decIndex} className={classNames('media-arrow-button', 'media-arrow-button--right')}>
             <img alt='' src={arrowright} />
           </button>
-          <div className='media-list'>
-            {MEDIA.map((elem, i) => (
-              <div key={i} index={i + this.state.shift} className='media-elem'>
-                <img alt='' src={elem.img} />
-                <div className='media-elem-title'>
-                  {elem.title}
+
+          <ReactSwipeEvents
+            onSwipedLeft={this.decIndex}
+            onSwipedRight={this.incIndex}
+          >
+            <div className='media-list'>
+              {MEDIA.map((elem, i) => (
+                <div key={i} index={i + this.state.shift} className='media-elem'>
+                  <img alt='' src={elem.img} />
+                  <div className='media-elem-title'>
+                    {elem.title}
+                  </div>
+                  <div className='media-elem-text'>
+                    {elem.text}
+                  </div>
+                  <button className='media-elem-open'>
+                    <img alt='' src={openwindow} />
+                  </button>
                 </div>
-                <div className='media-elem-text'>
-                  {elem.text}
-                </div>
-                <button className='media-elem-open'>
-                  <img alt='' src={openwindow} />
-                </button>
-              </div>
-            ))}
-          </div>   
+              ))}
+            </div>   
+          </ReactSwipeEvents>
         </div>
+
         
         <div className='media-ind-list'>
-          <button onClick={this.decIndex} className={classNames('media-ind-elem', {'media-ind-elem--active': this.state.shift === 0})}></button>
-          <button onClick={this.incIndex} className={classNames('media-ind-elem', {'media-ind-elem--active': this.state.shift === -1})}></button>
+          {MEDIA.map((elem, i) => (
+            <button key={i} onClick={e => this.setIndex(-i)} className={classNames('media-ind-elem', {'media-ind-elem--active': this.state.shift === -i})}></button>
+          ))}
         </div>  
       </div>
     );
