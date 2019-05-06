@@ -51,6 +51,7 @@ class Trasted extends Component {
   }
 
   render() {
+    const { act } = this.state;
     return (
       <div className='trasted-wrapper'>
         <div className='trasted-title'>
@@ -60,18 +61,18 @@ class Trasted extends Component {
 
           <div className='trasted-info'>
             <div className='trasted-info-text'>
-              {TRASTED[this.state.act].text}
+              {TRASTED[act].text}
             </div>
             <div className='trasted-info-title'>
               <div className='trasted-info-ico'>
-                <img alt='' src={TRASTED[this.state.act].ico} />
+                <img alt='' src={TRASTED[act].ico} />
               </div>
-              {TRASTED[this.state.act].title_1}<br />
-              {TRASTED[this.state.act].title_2}
+              {TRASTED[act].title_1}<br />
+              {TRASTED[act].title_2}
             </div>
             <div className='trasted-info-btn-wrap'>
               {TRASTED.map((elem, i) => (
-                <button key={i} onClick={() => this.changeAct(i)} className={classNames('trasted-info-btn', {'trasted-info-btn--active': this.state.act === i})}></button>
+                <button key={i} onClick={() => this.changeAct(i)} className={classNames('trasted-info-btn', {'trasted-info-btn--active': act === i})}></button>
               ))}
             </div>
           </div>

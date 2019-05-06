@@ -58,13 +58,16 @@ class Exchanges extends Component {
   }
 
   render() {
+    const { clsd } = this.state;
+    const wrClass = classNames('exchanges-block-wrapper', {'block-closed': clsd});
+    
     return (
       <div className='exchanges-wrapper'>
         <div className='exchanges'>
           <div className='exchanges-title'>
             Supported exchanges
           </div>
-          <div className={classNames('exchanges-block-wrapper', {'block-closed': this.state.clsd})}>
+          <div className={wrClass}>
             {EXCHANGES.map((item, i) => (
               <div key={i} className='exchanges-block'>
                 <a href={item.href}>
@@ -73,7 +76,7 @@ class Exchanges extends Component {
               </div>
             ))}
           </div>
-        <button className='exchanges-btn' onClick={this.closeHandle}>{this.state.clsd? 'Show all' : 'Skip all'}</button>
+        <button className='exchanges-btn' onClick={this.closeHandle}>{clsd? 'Show all' : 'Skip all'}</button>
         </div>
       </div>
     );
