@@ -6,41 +6,52 @@ import './style.css';
 const EXCHANGES = [
   {
     img: require('../../assets/images/bibox.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/binance.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bit-z.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bitfinex.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bitstamp.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bittrex.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bibox.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/binance.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bit-z.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bitfinex.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bitstamp.svg'),
-    href: '#1',
-  },{
-    img: require('../../assets/images/bittrex.svg'),
-    href: '#1',
+    href: '#1'
   },
+  {
+    img: require('../../assets/images/binance.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bit-z.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bitfinex.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bitstamp.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bittrex.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bibox.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/binance.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bit-z.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bitfinex.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bitstamp.svg'),
+    href: '#1'
+  },
+  {
+    img: require('../../assets/images/bittrex.svg'),
+    href: '#1'
+  }
 ];
 
 class Exchanges extends Component {
@@ -53,20 +64,20 @@ class Exchanges extends Component {
 
   closeHandle() {
     this.setState(state => ({
-      clsd: !state.clsd 
+      clsd: !state.clsd
     }));
   }
 
   render() {
     const { clsd } = this.state;
-    const wrClass = classNames('exchanges-block-wrapper', {'block-closed': clsd});
-    
+    const wrClass = classNames('exchanges-block-wrapper', {
+      'block-closed': clsd
+    });
+
     return (
       <div className='exchanges-wrapper'>
         <div className='exchanges'>
-          <div className='exchanges-title'>
-            Supported exchanges
-          </div>
+          <div className='exchanges-title'>Supported exchanges</div>
           <div className={wrClass}>
             {EXCHANGES.map((item, i) => (
               <div key={i} className='exchanges-block'>
@@ -76,7 +87,9 @@ class Exchanges extends Component {
               </div>
             ))}
           </div>
-        <button className='exchanges-btn' onClick={this.closeHandle}>{clsd? 'Show all' : 'Skip all'}</button>
+          <button className='exchanges-btn' onClick={this.closeHandle}>
+            {clsd ? 'Show all' : 'Skip all'}
+          </button>
         </div>
       </div>
     );

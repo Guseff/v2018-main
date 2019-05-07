@@ -16,17 +16,17 @@ import Start from './components/Start';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <Header />
-          <Hero />
-          <Advantages />
-          <Exchanges />
-          <Tools />
-          <Steps />
-          <Trasted />
-          <Media />
-          <Start />
-          <Footer />
+      <div className='App'>
+        <Header />
+        <Hero />
+        <Advantages />
+        <Exchanges />
+        <Tools />
+        <Steps />
+        <Trasted />
+        <Media />
+        <Start />
+        <Footer />
       </div>
     );
   }

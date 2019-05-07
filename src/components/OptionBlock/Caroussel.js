@@ -5,32 +5,36 @@ import ReactSwipeEvents from 'react-swipe-events';
 import './style.css';
 
 class Caroussel extends Component {
-  state = {shift: 0};
-  
+  state = { shift: 0 };
+
   swipeLeftHandler = () => {
     if (this.state.shift > -2) {
-      this.setState({shift: this.state.shift - 1});
+      this.setState({ shift: this.state.shift - 1 });
     }
-  }
+  };
 
   swipeRightHandler = () => {
     if (this.state.shift < 0) {
-      this.setState({shift: this.state.shift + 1});
+      this.setState({ shift: this.state.shift + 1 });
     }
-  }
+  };
 
   render() {
     return (
-      <ReactSwipeEvents 
+      <ReactSwipeEvents
         onSwipedLeft={this.swipeLeftHandler}
         onSwipedRight={this.swipeRightHandler}
       >
-        <div className="option-list">
+        <div className='option-list'>
           {this.props.list.map((elem, i) => (
-            <div key={i} index={i + this.state.shift} className={classNames('option-list-element',
-                              {'option-list-element--active': elem.active}
-                            )}>
-              <div className='option-element-top'>              
+            <div
+              key={i}
+              index={i + this.state.shift}
+              className={classNames('option-list-element', {
+                'option-list-element--active': elem.active
+              })}
+            >
+              <div className='option-element-top'>
                 <img alt='' src={elem.ico} />
                 <div>
                   <span>{elem.span}</span> {elem.text}
@@ -45,4 +49,4 @@ class Caroussel extends Component {
   }
 }
 
-export default Caroussel; 
+export default Caroussel;

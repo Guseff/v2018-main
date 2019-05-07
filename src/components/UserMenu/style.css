@@ -35,7 +35,7 @@
   color: #ffffff !important;
 }
 
-@media (max-width: 1319px) { 
+@media (max-width: 1319px) {
   .user-menu {
     display: none;
   }

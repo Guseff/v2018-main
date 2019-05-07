@@ -7,10 +7,11 @@ import img from '../../assets/images/hero-image@2x.png';
 
 const HERO_BTNS = [
   {
-    text: 'GET STARTED',
-  },{
-    text: 'view demo',
+    text: 'GET STARTED'
   },
+  {
+    text: 'view demo'
+  }
 ];
 
 const Hero = () => (
@@ -20,9 +21,9 @@ const Hero = () => (
         A better way <br /> to manage and trade <br /> cryptocurrency
       </div>
       <div className='hero-info-text'>
-        Whenever you want to trade, monitor market, manage your
-        assets or earn on the crypto price difference - 
-        Bitsgap is all-in-one platform that has you covered.
+        Whenever you want to trade, monitor market, manage your assets or earn
+        on the crypto price difference - Bitsgap is all-in-one platform that has
+        you covered.
       </div>
       <div className='hero-info-buttons'>
         {HERO_BTNS.map((item, i) => (

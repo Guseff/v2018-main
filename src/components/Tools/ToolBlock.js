@@ -13,26 +13,47 @@ class ToolBlock extends Component {
 
   closeHandle() {
     this.setState(state => ({
-        clsd: !state.clsd 
-      }));
+      clsd: !state.clsd
+    }));
   }
 
   render() {
     return (
-      <div className={classNames('tool-block', {'tool-block--closed': this.state.clsd})}>
-        <div className={classNames('tool-block-img', {'tool-el--closed': this.state.clsd})}>
+      <div
+        className={classNames('tool-block', {
+          'tool-block--closed': this.state.clsd
+        })}
+      >
+        <div
+          className={classNames('tool-block-img', {
+            'tool-el--closed': this.state.clsd
+          })}
+        >
           <img alt='' src={this.props.img} />
         </div>
-        
-        <button className={classNames('tool-block-title', {'tool-block-title--closed': this.state.clsd})} onClick={this.closeHandle}>
+
+        <button
+          className={classNames('tool-block-title', {
+            'tool-block-title--closed': this.state.clsd
+          })}
+          onClick={this.closeHandle}
+        >
           {this.props.title}
         </button>
 
-        <div className={classNames('tool-block-text', {'tool-el--closed': this.state.clsd})}>
+        <div
+          className={classNames('tool-block-text', {
+            'tool-el--closed': this.state.clsd
+          })}
+        >
           {this.props.text}
         </div>
 
-        <div className={classNames('tool-btn-wrap', {'tool-el--closed': this.state.clsd})}>
+        <div
+          className={classNames('tool-btn-wrap', {
+            'tool-el--closed': this.state.clsd
+          })}
+        >
           <button className={classNames('tool-btn')}>Learn more</button>
         </div>
       </div>

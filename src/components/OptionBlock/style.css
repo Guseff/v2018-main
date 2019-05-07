@@ -57,7 +57,8 @@
   background-color: #f2f8ff;
 }
 
-.option-text span, .option-list-element span {
+.option-text span,
+.option-list-element span {
   font-weight: bold;
 }
 
@@ -80,7 +81,7 @@
 }
 
 .slick---pic {
-  width: 330px; 
+  width: 330px;
   height: 330px;
   position: absolute;
   top: 0;
@@ -97,11 +98,13 @@
   .option {
     width: 688px;
     margin: 80px auto;
-  } 
+  }
   .option-info {
     width: 688px;
   }
-  .option-title, .option-text, .option-button-wrap {
+  .option-title,
+  .option-text,
+  .option-button-wrap {
     padding-left: 0;
   }
   .option-list {
@@ -173,11 +176,13 @@
   .option {
     width: 335px;
     margin: 80px auto;
-  } 
+  }
   .option-info {
     width: 335px;
   }
-  .option-title, .option-text, .option-button-wrap {
+  .option-title,
+  .option-text,
+  .option-button-wrap {
     padding-left: 0;
   }
   .caroussel {

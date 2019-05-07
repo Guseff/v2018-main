@@ -61,7 +61,7 @@
 }
 
 /*   Tablet Screen   */
-@media (max-width: 1319px) and (min-width: 768px) { 
+@media (max-width: 1319px) and (min-width: 768px) {
   .exchanges-wrapper {
     width: 100%;
     margin: 0 auto 90px;
@@ -70,23 +70,23 @@
     background-color: #182873;
     color: #ffffff;
   }
-  
+
   .exchanges {
     position: relative;
     margin: 0 auto;
     width: 688px;
   }
-  
+
   .exchanges-block-wrapper {
     height: 433px;
   }
-  
+
   .exchanges-block {
     width: 33%;
   }
 }
 /*   Mobile Screen   */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .exchanges-wrapper {
     width: 100%;
     margin: 0 auto 90px;
@@ -95,7 +95,7 @@
     background-color: #182873;
     color: #ffffff;
   }
-  
+
   .exchanges {
     position: relative;
     margin: 0 auto;
@@ -105,11 +105,11 @@
   .exchanges-title {
     font-size: 25px;
   }
-  
+
   .exchanges-block-wrapper {
     height: 433px;
   }
-  
+
   .exchanges-block {
     width: 33%;
   }

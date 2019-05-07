@@ -89,7 +89,7 @@
   .tools {
     flex-wrap: wrap;
   }
-  
+
   .tool-block {
     width: 234px;
     height: 300px;
@@ -97,25 +97,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     border-radius: 4px;
     border: solid 1px #ddeaff;
     background-color: #ffffff;
 
     margin-bottom: 20px;
   }
-  
+
   .tool-block:hover {
     box-shadow: none;
   }
-  
+
   .tool-btn {
     display: none;
   }
 }
-  
+
 /*   Mobile Screen   */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .tools-wrapper {
     width: 335px;
     margin: 0 auto 70px;
@@ -124,7 +124,7 @@
   .tools {
     flex-wrap: wrap;
   }
-  
+
   .tool-block {
     width: 255px;
     height: 338px;
@@ -132,7 +132,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     border-radius: 4px;
     border: solid 1px #ddeaff;
     background-color: #ffffff;
@@ -141,7 +141,7 @@
     transition-property: height;
     transition-duration: 0.5s;
   }
-  
+
   .tool-block:hover {
     box-shadow: none;
   }

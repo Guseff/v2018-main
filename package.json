@@ -18,6 +18,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "prettier": {
+    "jsxSingleQuote": true,
+    "singleQuote": true 
+  },
   "browserslist": [
     ">0.2%",
     "not dead",

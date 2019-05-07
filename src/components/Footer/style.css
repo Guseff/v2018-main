@@ -9,13 +9,12 @@
 }
 
 @media (max-width: 1320px) {
-  
 }
 
 .footer-social {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 25px 0 20px;
 }
 

@@ -11,4 +11,4 @@ const Start = () => (
   </div>
 );
 
-export default Start; 
+export default Start;
