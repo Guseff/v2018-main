@@ -23,7 +23,7 @@
   },
   "prettier": {
     "jsxSingleQuote": true,
-    "singleQuote": true 
+    "singleQuote": true
   },
   "browserslist": [
     ">0.2%",

@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 import './style.css';
 
@@ -64,7 +64,7 @@ const HeaderMenu = () => (
     {MENU_ITEMS.map((item, i) => (
       <li
         key={i}
-        className={classNames({ 'header-menu--active': item.active })}
+        className={cx({ 'header-menu--active': item.active })}
       >
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a>
@@ -76,7 +76,7 @@ const HeaderMenu = () => (
             {item.sub.map((subitem, j) => (
               <li
                 key={j}
-                className={classNames({
+                className={cx({
                   'header-menu-sub--active': subitem.active
                 })}
               >

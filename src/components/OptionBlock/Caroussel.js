@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 import ReactSwipeEvents from 'react-swipe-events';
 
 import './style.css';
@@ -30,7 +30,7 @@ class Caroussel extends Component {
             <div
               key={i}
               index={i + this.state.shift}
-              className={classNames('option-list-element', {
+              className={cx('option-list-element', {
                 'option-list-element--active': elem.active
               })}
             >

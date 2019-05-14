@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 import './style.css';
 
@@ -70,7 +70,7 @@ class Exchanges extends Component {
 
   render() {
     const { clsd } = this.state;
-    const wrClass = classNames('exchanges-block-wrapper', {
+    const wrClass = cx('exchanges-block-wrapper', {
       'block-closed': clsd
     });
 

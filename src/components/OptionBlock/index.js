@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 import ButtonLearn from '../ButtonLearn';
 
@@ -8,7 +8,7 @@ import Caroussel from './Caroussel';
 
 const OptionBlock = props => (
   <div
-    className={classNames('option', { 'option--reverse': props.data.reverse })}
+    className={cx('option', { 'option--reverse': props.data.reverse })}
   >
     <div className='option-info'>
       <div className='option-title'>{props.data.title}</div>
@@ -23,7 +23,7 @@ const OptionBlock = props => (
     <img
       alt=''
       src={props.data.img}
-      className={classNames('option-img', {
+      className={cx('option-img', {
         'option-img--reverse': props.data.reverse
       })}
     />

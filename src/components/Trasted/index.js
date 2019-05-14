@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 import './style.css';
 
@@ -77,7 +77,7 @@ class Trasted extends Component {
                 <button
                   key={i}
                   onClick={() => this.changeAct(i)}
-                  className={classNames('trasted-info-btn', {
+                  className={cx('trasted-info-btn', {
                     'trasted-info-btn--active': act === i
                   })}
                 />

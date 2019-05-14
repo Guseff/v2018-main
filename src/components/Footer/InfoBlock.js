@@ -1,9 +1,9 @@
 import React from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 const InfoBlock = data => (
   <div
-    className={classNames('footer-info-block', {
+    className={cx('footer-info-block', {
       'footer-info-block--narrow': data.narr,
       'footer-info-block--wide': !data.narr
     })}

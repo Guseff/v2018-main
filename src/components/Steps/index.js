@@ -1,9 +1,11 @@
 import React from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 import './style.css';
 
-import img from '../../assets/images/3-steps-image@2x.png';
+import img_desc from '../../assets/images/3-steps-image@2x.png';
+import img_tab from '../../assets/images/3-steps-image-tab@2x.png';
+import img_mob from '../../assets/images/3-steps-image-mob@2x.png';
 
 const STEPS = [
   {
@@ -39,7 +41,7 @@ const Steps = () => (
                 <div className='steps-element-title-text'>{elem.title}</div>
               </div>
               <div
-                className={classNames('steps-element-text', {
+                className={cx('steps-element-text', {
                   'steps-element-text--last': STEPS.length - 1 === i
                 })}
               >
@@ -52,9 +54,10 @@ const Steps = () => (
           <button>Sign up now</button>
         </div>
       </div>
-      <img alt='' src={img} className='steps-img' />
+      <img alt='' src={img_desc} className='steps-img' />
     </div>
-    <img alt='' src={img} className='steps-img--mobile' />
+    <img alt='' src={img_tab} className='steps-img--tablet' />
+    <img alt='' src={img_mob} className='steps-img--mobile' />
   </div>
 );
 

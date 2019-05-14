@@ -92,6 +92,10 @@
   display: none;
 }
 
+.steps-img--tablet {
+  display: none;
+}
+
 .steps-button-wrap {
   padding-left: 64px;
 }
@@ -126,6 +130,10 @@
     width: 688px;
   }
   .steps-img {
+    display: none;
+  }
+  .steps-img--tablet {
+    display: block;
     width: 700px;
     height: 444px;
     margin-top: 80px;
@@ -160,8 +168,8 @@
   }
   .steps-img--mobile {
     display: block;
-    max-width: 100%;
+    width: 355px;
     height: 320px;
-    margin: 80px auto 0;
+    margin: 80px 0 0 20px;
   }
 }

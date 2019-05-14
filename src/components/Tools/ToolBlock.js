@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 import './style.css';
 
@@ -18,23 +18,25 @@ class ToolBlock extends Component {
   }
 
   render() {
+    const { clsd } = this.state;
+
     return (
       <div
-        className={classNames('tool-block', {
-          'tool-block--closed': this.state.clsd
+        className={cx('tool-block', {
+          'tool-block--closed': clsd
         })}
       >
         <div
-          className={classNames('tool-block-img', {
-            'tool-el--closed': this.state.clsd
+          className={cx('tool-block-img', {
+            'tool-el--closed': clsd
           })}
         >
           <img alt='' src={this.props.img} />
         </div>
 
         <button
-          className={classNames('tool-block-title', {
-            'tool-block-title--closed': this.state.clsd
+          className={cx('tool-block-title', {
+            'tool-block-title--closed': clsd
           })}
           onClick={this.closeHandle}
         >
@@ -42,19 +44,19 @@ class ToolBlock extends Component {
         </button>
 
         <div
-          className={classNames('tool-block-text', {
-            'tool-el--closed': this.state.clsd
+          className={cx('tool-block-text', {
+            'tool-el--closed': clsd
           })}
         >
           {this.props.text}
         </div>
 
         <div
-          className={classNames('tool-btn-wrap', {
-            'tool-el--closed': this.state.clsd
+          className={cx('tool-btn-wrap', {
+            'tool-el--closed': clsd
           })}
         >
-          <button className={classNames('tool-btn')}>Learn more</button>
+          <button className='tool-btn'>Learn more</button>
         </div>
       </div>
     );

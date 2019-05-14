@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+import cx from 'classnames';
 import ReactSwipeEvents from 'react-swipe-events';
 
 import './style.css';
@@ -70,7 +70,7 @@ class Media extends Component {
         <div className='media'>
           <button
             onClick={this.incIndex}
-            className={classNames(
+            className={cx(
               'media-arrow-button',
               'media-arrow-button--left'
             )}
@@ -79,7 +79,7 @@ class Media extends Component {
           </button>
           <button
             onClick={this.decIndex}
-            className={classNames(
+            className={cx(
               'media-arrow-button',
               'media-arrow-button--right'
             )}
@@ -115,7 +115,7 @@ class Media extends Component {
             <button
               key={i}
               onClick={e => this.setIndex(-i)}
-              className={classNames('media-ind-elem', {
+              className={cx('media-ind-elem', {
                 'media-ind-elem--active': this.state.shift === -i
               })}
             />
