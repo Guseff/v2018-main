@@ -1,5 +1,6 @@
 import React from 'react';
-import cx from 'classnames';
+
+import Step from './Step';
 
 import './style.css';
 
@@ -35,19 +36,12 @@ const Steps = () => (
         <div className='steps-title'>Start in 3 easy steps:</div>
         <div className='steps-list'>
           {STEPS.map((elem, i) => (
-            <div key={i} className='steps-element'>
-              <div className='steps-element-title'>
-                <div className='steps-element-title-number'>{elem.step}</div>
-                <div className='steps-element-title-text'>{elem.title}</div>
-              </div>
-              <div
-                className={cx('steps-element-text', {
-                  'steps-element-text--last': STEPS.length - 1 === i
-                })}
-              >
-                {elem.text}
-              </div>
-            </div>
+            <Step
+              act={STEPS.length === i}
+              step={elem.step}
+              title={elem.title}
+              text={elem.text}
+            />
           ))}
         </div>
         <div className='steps-button-wrap'>

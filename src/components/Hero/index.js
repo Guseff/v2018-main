@@ -1,5 +1,4 @@
 import React from 'react';
-import cx from 'classnames';
 
 import './style.css';
 
@@ -27,7 +26,7 @@ const Hero = () => (
       </div>
       <div className='hero-info-buttons'>
         {HERO_BTNS.map((item, i) => (
-          <button key={i} className={cx('hero-btn')}>
+          <button key={i} className='hero-btn'>
             {item.text}
           </button>
         ))}

@@ -7,9 +7,7 @@ import './style.css';
 import Caroussel from './Caroussel';
 
 const OptionBlock = props => (
-  <div
-    className={cx('option', { 'option--reverse': props.data.reverse })}
-  >
+  <div className={cx('option', { 'option--reverse': props.data.reverse })}>
     <div className='option-info'>
       <div className='option-title'>{props.data.title}</div>
       <div className='option-text'>{props.data.text}</div>
