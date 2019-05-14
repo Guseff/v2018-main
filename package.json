@@ -6,7 +6,8 @@
     "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-swipe-events": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,7 +16,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/anchor-is-valid": 0
+    }
+  },
+  "prettier": {
+    "jsxSingleQuote": true,
+    "singleQuote": true
   },
   "browserslist": [
     ">0.2%",

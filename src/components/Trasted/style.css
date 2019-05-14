@@ -1,0 +1,155 @@
+.trasted-wrapper {
+  width: 1320px;
+  margin: 100px auto;
+}
+
+.trasted {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trasted-title {
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  color: #182873;
+}
+
+.trasted-info {
+  width: 550px;
+  height: 290px;
+  padding: 50px 50px 30px;
+  border-radius: 3px;
+  border: solid 1px #ddeaff;
+  background-color: #ffffff;
+}
+
+.trasted-info-title {
+  padding-left: 64px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  color: #182873;
+  position: relative;
+}
+
+.trasted-info-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #182873;
+  margin-bottom: 50px;
+}
+
+.trasted-info-ico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+}
+
+.trasted-list {
+  width: 651px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.trasted-list-element {
+  width: 316px;
+  height: 175px;
+  border-radius: 3px;
+  border: solid 1px #ddeaff;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.trasted-info-btn-wrap {
+  width: 205px;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 0;
+}
+
+.trasted-info-btn {
+  width: 40px;
+  height: 3px;
+  background-color: #d0e0f9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.trasted-info-btn--active {
+  background-color: #207bff !important;
+}
+
+/* Styles for TABLET screens */
+@media (max-width: 1320px) and (min-width: 768px) {
+  .trasted-wrapper {
+    width: 688px;
+  }
+
+  .trasted {
+    flex-direction: column;
+  }
+
+  .trasted-info {
+    width: 588px;
+    margin-bottom: 20px;
+  }
+
+  .trasted-list {
+    width: 688px;
+  }
+
+  .trasted-list-element {
+    width: 334px;
+    height: 175px;
+  }
+}
+
+/* Styles for MOBILE screens */
+@media (max-width: 767px) {
+  .trasted-wrapper {
+    width: 335px;
+  }
+
+  .trasted {
+    flex-direction: column;
+  }
+
+  .trasted-title {
+    font-size: 25px;
+  }
+
+  .trasted-info {
+    width: 275px;
+    height: 410px;
+    padding: 30px 30px 30px;
+    margin-bottom: 20px;
+  }
+
+  .trasted-list {
+    width: 335px;
+  }
+
+  .trasted-list-element {
+    width: 158px;
+    height: 130px;
+  }
+
+  .trasted-list-element img {
+    transform: scale(0.7);
+  }
+}

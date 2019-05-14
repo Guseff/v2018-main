@@ -1,0 +1,52 @@
+.start-wrapper {
+  width: 1320px;
+  margin: 0 auto 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.start-button {
+  margin-top: 40px;
+  padding: 19px 30px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #207bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Styles for TABLET screens */
+@media (max-width: 1320px) and (min-width: 768px) {
+  .start-wrapper {
+    width: 688px;
+  }
+
+  .start-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+
+/* Styles for MOBILE screens */
+@media (max-width: 767px) {
+  .start-wrapper {
+    width: 335px;
+    margin-bottom: 80px;
+  }
+
+  .start-title {
+    font-size: 25px;
+  }
+}
